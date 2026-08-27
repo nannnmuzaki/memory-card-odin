@@ -26,7 +26,8 @@ const shuffleArray = (array) => {
   return newArray;
 };
 
-export function GifCard({ cardsData, setCardsData, clickedIds, setClickedIds, setIsGameOver }) {
+export function GifCard({ onCardClick }) {
+  const [cardsData, setCardsData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -76,22 +77,20 @@ export function GifCard({ cardsData, setCardsData, clickedIds, setClickedIds, se
     return () => {
       controller.abort();
     };
-  }, [setCardsData]);
+  }, []);
 
   const handleCardClick = (id) => {
-    if (clickedIds.includes(id)) {
-      setIsGameOver(true);
-    } else {
-      setClickedIds((prev) => [...prev, id]);
-      setCardsData((prevCards) => shuffleArray(prevCards));
-    }
+    onCardClick(id);
+    setCardsData((prev) => shuffleArray(prev));
   };
 
   return (
     <div className={`cards-grid ${isLoading ? "loading" : error ? "error" : ""}`}>
       {isLoading && <strong>Loading...</strong>}
       {error && <strong>{error}</strong>}
-      {cardsData.length > 0 &&
+      {!isLoading &&
+        !error &&
+        cardsData.length > 0 &&
         cardsData.map((item) => (
           <Card key={item.id} gifData={item} onCardClick={handleCardClick} />
         ))}

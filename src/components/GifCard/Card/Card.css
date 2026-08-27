@@ -1,13 +1,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 0;
   margin: 1rem;
   border: 1px solid var(--border);
   background-color: var(--bg);
-  height: fit-content;
 }
 
 .card:hover {
