@@ -41,7 +41,7 @@ export function GifCard({ cardsData, setCardsData, clickedIds, setClickedIds, se
 
           return {
             ...item,
-            url: fetchedGif ? fetchedGif.images.original.webp : "",
+            url: fetchedGif ? fetchedGif.images.downsized.url : "",
           };
         });
 
