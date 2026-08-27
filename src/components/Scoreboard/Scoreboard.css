@@ -1,14 +1,14 @@
 .scoreboard {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--border);
 }
 
 .scoreboard > p {
-    padding-block: 0.5rem;
-    width: 100%;
+  padding-block: 0.5rem;
+  width: 100%;
 }
 
 .scoreboard > p:first-of-type {
-    border-right: 1px solid var(--border);
+  border-right: 1px solid var(--border);
 }
