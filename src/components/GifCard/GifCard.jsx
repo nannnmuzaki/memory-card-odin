@@ -2,7 +2,12 @@ import { Card } from "./Card/Card";
 import { useState, useEffect } from "react";
 import "./GifCard.css";
 
-const GIFS = [{ id: "wZuqtORr4zRf6r8RTL", name: "Soyjak", url: "" }];
+const GIFS = [
+  { id: "wZuqtORr4zRf6r8RTL", name: "Cobson", url: "" },
+  { id: "KzaBIW1AQ5gubGktAQ", name: "Chudjak", url: "" },
+  { id: "CNt6ZAx90T94RUj5GT", name: "Wojak", url: "" },
+  { id: "7ZiH2PsAoRPnLfccqL", name: "SquirrelJak", url: "" },
+];
 
 const shuffleArray = (array) => {
   const newArray = [...array];

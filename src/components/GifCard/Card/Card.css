@@ -1,8 +1,10 @@
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     margin: 1rem;
-    padding: 1rem;
     border: 1px solid var(--border);
     background-color: var(--bg);
     height: fit-content;
@@ -13,5 +15,19 @@
 }
 
 .card > img {
-    max-width: 280px;
+    width: 240px;
+    height: 240px;
+    padding: 0.2rem;
+}
+
+.card > strong {
+    font: 24px/145% var(--mono);
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+
+    border-top: 1px solid var(--border);
+    width: 100%;
+    padding-block: 0.5rem;
 }
