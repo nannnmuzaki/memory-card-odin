@@ -3,10 +3,18 @@ import { useState, useEffect } from "react";
 import "./GifCard.css";
 
 const GIFS = [
-  { id: "wZuqtORr4zRf6r8RTL", name: "Cobson", url: "" },
+  { id: "wZuqtORr4zRf6r8RTL", name: "Gem Cobson", url: "" },
   { id: "KzaBIW1AQ5gubGktAQ", name: "Chudjak", url: "" },
   { id: "CNt6ZAx90T94RUj5GT", name: "Wojak", url: "" },
   { id: "7ZiH2PsAoRPnLfccqL", name: "SquirrelJak", url: "" },
+  { id: "C9CoWYJBtw3uw5ofCb", name: "Billion must smile", url: "" },
+  { id: "lcv0r1JOtHmCTYHef0", name: "Nodding Soyjak", url: "" },
+  { id: "Y0ig1C8rK7Y8kEo4qP", name: "Dancing Impjak", url: "" },
+  { id: "nLhOhQge5GVHarWZ7w", name: "Truth Nuke", url: "" },
+  { id: "3tGbo2ey4lhkonNPFW", name: "Context Jak", url: "" },
+  { id: "6KYhn9qv2Jes7szMsX", name: "Coal Jak", url: "" },
+  { id: "YLn30deFai3xvKmgBK", name: "All Quiet on Happening Front", url: "" },
+  { id: "j6uCp9lM2IaAhRcIGh", name: "Hope", url: "" },
 ];
 
 const shuffleArray = (array) => {
