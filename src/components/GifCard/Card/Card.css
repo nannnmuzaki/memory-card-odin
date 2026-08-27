@@ -1,0 +1,17 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    height: fit-content;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card > img {
+    max-width: 280px;
+}
